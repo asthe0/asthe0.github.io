@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <a class="title" href="">OpenDoor</a>
+                    <div class="manage-projects">
+                        <img src="assets/configIcon.svg" alt="">
+                        <a href="">manage projects</a>
+                    </div>
+                </nav>
+
+                <div class="project-tracker-container">
+                    <div class="project-tracker">
+                        <div class="mainSvg">
+                            <img img src="assets/mainIcon.svg" alt="">
+                        </div>
+                        <div class="project-tracker-title">
+                            <h1>Project </br>Tracker</h1>
+                        </div>
+                        <div class="tracker-container">
+                            <div class="tracker">
+                                
+                                <div class="tracker1">
+                                    <h2>12</h2><span class="greenDot"></span>
+                                    <h4>In progress</h4>
+                                </div>
+                                <div class="tracker2">
+                                    <h2>3</h2><span class="redDot"></span>
+                                    <h4>Blocked</h4>
+                                </div>
+                                <div class="tracker3">
+                                    <h2>85</h2><span class="yellowDot"></span>
+                                    <h4>Shipped</h4>
+                                </div>
+                                <div class="tracker4">
+                                    <h2>100</h2>
+                                    <h4>Projects total</h4>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </header>
+            <main>
+                <h2 class="main-title-h2">OKRs</h2>
+                <div class="okrs-container">
+                    <div class="okr">
+                        <div class="green-circle">
+                            <div class="white-circle"></div>
+                        </div>
+                        <h3>Customer focused</h3>
+                    </div>
+
+                    <div class="okr">
+                        <div class="orange-circle">
+                            <div class="white-circle"></div>
+                        </div>
+                        <h3>Defect free seller </br>experience</h3>
+                    </div>
+
+                    <div class="okr">
+                        <div class="orange-circle">
+                            <div class="white-circle"></div>
+                        </div>
+                        <h3>Increase brand </br>awareness</h3>
+                    </div>
+
+                    <div class="okr">
+                        <div class="blue-circle">
+                            <div class="white-circle"></div>
+                        </div>
+                        <h3>Invest in our </br>team and culture</h3>
+                    </div>
+                    
+                </div>
+                <div class="projects">
+
+                    <div class="projects-header">
+                        <h1>Projects</h1>
+                        <div class="dropdown-content">
+                            <div class="first">
+                                <h3>Filter by:</h3>
+                            </div>
+                            <div class="select_mate" data-mate-select="active" >
+                                <select name="" onchange="" onclick="return false;" id="">
+                                <option value=""  >Select an option </option>
+                                <option value="1">Shipping</option>
+                                <option value="2" >Planning</option>
+                                  </select>
+                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                    <path d="M0-.75h24v24H0z" fill="none"/>
+                                </svg></span>
+                                <div class="cont_list_select_mate">
+                                  <ul class="cont_select_int">  </ul> 
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="cards">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-type">EPD</h3>
+                                <h3 class="card-progress-inprogress">IN PROGRESS</h3>
+                            </div>
+                            <h1 class="card-title">App onboarding revamp</h1>
+                            <h4 class="card-tags">High impact<span class="spann"></span>High effort</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum rutrum lorem quis placerat. Nam euismod sapien placerat cursus eleifend. Maecenas hendrerit ut arcu ut ornare. Nulla eget tristique magna, tristique dictum justo. Ut elementum lectus non metus convallis laoreet.</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-type">ADJACENT <br>SERVICES</h3>
+                                <h3 class="card-progress-blocked">BLOCKED</h3>
+                            </div>
+                            <h1 class="card-title">CX call guide</h1>
+                            <h4 class="card-tags">High impact<span class="spann"></span>Low effort</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum rutrum lorem quis placerat. Nam euismod sapien placerat cursus eleifend. Maecenas hendrerit ut arcu ut ornare. Nulla eget tristique magna, tristique dictum justo. Ut elementum lectus non metus convallis laoreet.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-type">DESIGN</h3>
+                                <h3 class="card-progress-inprogress">IN PROGRESS</h3>
+                            </div>
+                            <h1 class="card-title">Brand guideline</h1>
+                            <h4 class="card-tags">High impact<span class="spann"></span>Low effort</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum rutrum lorem quis placerat. Nam euismod sapien placerat cursus eleifend. Maecenas hendrerit ut arcu ut ornare. Nulla eget tristique magna, tristique dictum justo. Ut elementum lectus non metus convallis laoreet.</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-type">EPD</h3>
+                                <h3 class="card-progress-inprogress">IN PROGRESS</h3>
+                            </div>
+                            <h1 class="card-title">App onboarding revamp</h1>
+                            <h4 class="card-tags">High impact<span class="spann"></span>High effort</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum rutrum lorem quis placerat. Nam euismod sapien placerat cursus eleifend. Maecenas hendrerit ut arcu ut ornare. Nulla eget tristique magna, tristique dictum justo. Ut elementum lectus non metus convallis laoreet.</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-type">ADJACENT <br>SERVICES</h3>
+                                <h3 class="card-progress-blocked">BLOCKED</h3>
+                            </div>
+                            <h1 class="card-title">CX call guide</h1>
+                            <h4 class="card-tags">High impact<span class="spann"></span>Low effort</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum rutrum lorem quis placerat. Nam euismod sapien placerat cursus eleifend. Maecenas hendrerit ut arcu ut ornare. Nulla eget tristique magna, tristique dictum justo. Ut elementum lectus non metus convallis laoreet.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-type">DESIGN</h3>
+                                <h3 class="card-progress-inprogress">IN PROGRESS</h3>
+                            </div>
+                            <h1 class="card-title">Brand guideline</h1>
+                            <h4 class="card-tags">High impact<span class="spann"></span>Low effort</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum rutrum lorem quis placerat. Nam euismod sapien placerat cursus eleifend. Maecenas hendrerit ut arcu ut ornare. Nulla eget tristique magna, tristique dictum justo. Ut elementum lectus non metus convallis laoreet.</p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="pagination">
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href="">...</a>
+                        <a href="">16</a>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="copyright">
+                    <h3>&copy; 2020 OpenDoor</h3>
+                </div>
+                <div class="links">
+                    <a href="https://twitter.com/" target="_blank">
+                        <img class="footer-icon-1"src="assets/twitter-icon.svg" alt="Twitter Link">
+                    </a>
+                    <a href="https://github.com/" target="_blank">
+                        <img class="footer-icon-2"src="assets/github-icon.svg" alt="GitHub Link">
+                    </a>
+                </div>
+            </footer>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
